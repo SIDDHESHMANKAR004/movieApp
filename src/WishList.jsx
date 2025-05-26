@@ -51,9 +51,13 @@ export default function WishList(props) {
 
   if (wishlistdata.length === 0) {
     return (
-      <div className="my-5 p-lg-5 p-5 text-center text-capitalize">
+      <>
+          <div className=" my-lg-0 my-5 p-lg-0 p-4  ">f</div>
+
+      <div className="my-5 p-lg-5 p-5 my-lg-0 text-center text-capitalize">
         <h1>Add wishlist movies first...</h1>
       </div>
+      </>
     );
   }
   function handleWishListImgClick(WishM) {
