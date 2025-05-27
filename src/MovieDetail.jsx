@@ -1,5 +1,5 @@
 import axios, { Axios } from "axios";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState} from "react";
 import { RingLoader } from "react-spinners";
 
 // import React, { useState, useEffect, useRef } from "react";
@@ -165,7 +165,7 @@ export default function MovieDetail(props) {
       <div
         className="container-fluid    "
         style={{
-          backgroundColor: "#2a2a2f",
+          background: "linear-gradient(to right, #2C3E50, #000000)",
           position: "relative",
           boxShadow: "0 4px 16px rgba(0, 0, 0, 0.3)",
           color: "#d1d1d1",
@@ -188,7 +188,7 @@ export default function MovieDetail(props) {
                     key={index}
                     className="col-5 col-sm-4 mx-lg-4 col-md-3 col-lg-2 text-center mx-2 my-2 rounded-5"
                     style={{
-                      backgroundColor: "#242429",
+                      background: "linear-gradient(to bottom right, #1a1a2e, #16213E)",
                       border: "1px solid #3a3a42",
                       color: "#d1d1d1",
                       paddingBottom: "1rem",

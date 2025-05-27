@@ -213,9 +213,7 @@ export default function App() {
           <>
             <div
               className="     text-white"
-              style={{
-                background: "linear-gradient(to right, #434343, #000000)",
-              }}
+              style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}
             >
               <TrendingMoviesSlider
                 onTrendingImageClick={handleTrendingImageClick}
@@ -223,17 +221,13 @@ export default function App() {
             </div>
             <div
               className="    text-white"
-              style={{
-                background: "linear-gradient(to right, #434343, #000000)",
-              }}
+              style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}
             >
               <HorrorMoviesSlider onHorrorImageClick={handleHorrorImageClick} />
             </div>
             <div
               className="    text-white"
-              style={{
-                background: "linear-gradient(to right, #434343, #000000)",
-              }}
+              style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}
             >
               <BollywoodMoviesSlider
                 onBollywoodImageClick={handleBollywoodClick}
@@ -241,25 +235,19 @@ export default function App() {
             </div>
             <div
               className="    text-white"
-              style={{
-                background: "linear-gradient(to right, #434343, #000000)",
-              }}
+              style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}
             >
               <WarMoviesSlider onMovieClick={handleMovieClick} />
             </div>
             <div
               className="    text-white"
-              style={{
-                background: "linear-gradient(to right, #434343, #000000)",
-              }}
+              style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}
             >
               <DramaMoviesSlider onDramaImageClick={handleDramaImageClick} />
             </div>
             <div
               className="    text-white"
-              style={{
-                background: "linear-gradient(to right, #434343, #000000)",
-              }}
+              style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}
             >
               <KidsMoviesSlider onKidsImageClick={handleKidsImageClick} />
             </div>
@@ -292,9 +280,7 @@ export default function App() {
       {view == "webseries" && (
         <div
           className="    text-white"
-          style={{
-            background: "linear-gradient(to right, #434343, #000000)",
-          }}
+          style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}
         >
           <Webseries onTvShowsImageClick={handleTvShowsImageClick} />
         </div>

@@ -169,7 +169,7 @@ export default function Webseries(props) {
   return (
     <>
     <div className=" my-lg-0 my-5 p-lg-0 p-1">f</div>
-    <div className="bg-dark series-page text-white p-4   my-lg-0 my-5  ">
+    <div className=" series-page text-white p-4   my-lg-0 my-5  ">
       {Object.entries(seriesByGenre).map(([genre, shows]) => (
         <div key={genre} className=" my-lg-5 my-5  ">
           <h2
