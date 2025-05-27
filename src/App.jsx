@@ -266,17 +266,24 @@ export default function App() {
         )}
       </div>
       {view == "error" && (
-        <div style={{ textAlign: "center", padding: "310px" }}>
-          <img
-            className=" img-fluid"
-            src="/3737258.jpg"
+        <div className=""               style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}
+>
+            <div className=" my-lg-0 my-5 p-lg-0 p-5">f</div>
+
+        <div className="  mx- mx-lg-5 m-lg-5  my-5 vh-100 col-12 col-lg-10 text-white  " style={{ textAlign: "center"  }}>
+        <h2 className="  col-lg-12  col-12  p-4   p-lg-4  text-center">Oops! Something went wrong.
+                We didn't find any matches for"{searchMovieData}" ..
+
+        </h2>
+          {/* <img
+            className="  img-fluid  "
+            src="/troublepage.png"
             alt="Error"
             // style={{ maxWidth: "100%", height: "auto" }}
-          />
-          <h1>Oops! Something went wrong.</h1>
-          <p>The page you're looking for doesn't exist.</p>
+          /> */}
+          
         </div>
-      )}
+      </div>)}
       {view == "webseries" && (
         <div
           className="    text-white"

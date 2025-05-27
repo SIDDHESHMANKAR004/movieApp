@@ -54,8 +54,8 @@ export default function WishList(props) {
       <>
           <div className=" my-lg-0 my-5 p-lg-0 p-4  ">f</div>
 
-      <div className="my-5 p-lg-5 p-5 my-lg-0 text-center text-capitalize">
-        <h1>Add wishlist movies first...</h1>
+      <div className="my-5 p-lg-5  vh-100 text-white p-5 my-lg-5 text-center text-capitalize"  style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}>
+        <h1 >Add wishlist movies first...</h1>
       </div>
       </>
     );
