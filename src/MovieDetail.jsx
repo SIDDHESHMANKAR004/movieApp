@@ -186,18 +186,13 @@ export default function MovieDetail(props) {
                 .map((e, index) => (
                   <div
                     key={index}
-                    className="col-5 col-sm-4 mx-lg-4 col-md-3 col-lg-2 text-center mx-2 my-2 rounded-5"
-                    style={{
-                      background: "linear-gradient(to bottom right, #1a1a2e, #16213E)",
-                      border: "1px solid #3a3a42",
-                      color: "#d1d1d1",
-                      paddingBottom: "1rem",
-                    }}
+                    className="col-5 col-sm-4 mx-lg-4 col-md-3 col-lg-2 text-center mx-2 my-2 rounded-5 "
+                    
                   >
                     <img
                       src={`https://image.tmdb.org/t/p/w200${e.profile_path}`}
                       alt={e.name}
-                      className="img-fluid rounded-top-4"
+                      className="img-fluid  circle my-4  mb-lg-0 my-lg-0 mb-0   "
                     />
                     <p className="mt-2 mb-1" style={{ color: "#f0f0f0" }}>
                       <strong>{e.name}</strong>

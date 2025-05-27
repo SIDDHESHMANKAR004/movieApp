@@ -223,7 +223,7 @@ export default function Navbar(props) {
 
         <button className="nav-btn webseries-btn" onClick={handleWebSeriesClick}>
           <span className="btn-icon">📺</span>
-          <span className="btn-text">Web Series</span>
+          <span className="btn-text">TV Shows</span>
         </button>
       </div>
     </div>

@@ -40,6 +40,14 @@
 .read-the-docs {
   color: #888;
 } */
+ .circle{
+  border-radius: 50%; 
+   clip-path: initial(0 0 20% 0);
+   height: 50%;     /* Adjust based on the container or fixed value */
+  width: 100%;
+  object-fit: cover;
+  /* overflow: hidden; */
+ }
 .myb {
   border: 2px solid black;
 }
@@ -58,7 +66,7 @@
 
 .unified-button.dark {
   background-color: #1f1f1f;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .unified-button.dark:hover {

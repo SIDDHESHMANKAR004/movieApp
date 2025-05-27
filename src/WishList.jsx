@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { RingLoader } from "react-spinners";
 import axios from "axios";
@@ -52,11 +51,14 @@ export default function WishList(props) {
   if (wishlistdata.length === 0) {
     return (
       <>
-          <div className=" my-lg-0 my-5 p-lg-0 p-4  ">f</div>
+        <div className=" my-lg-0 my-5 p-lg-0 p-4  ">f</div>
 
-      <div className="my-5 p-lg-5  vh-100 text-white p-5 my-lg-5 text-center text-capitalize"  style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}>
-        <h1 >Add wishlist movies first...</h1>
-      </div>
+        <div
+          className="my-5 p-lg-5  vh-100 text-white p-5 my-lg-5 text-center text-capitalize"
+          style={{ background: "linear-gradient(to right, #2C3E50, #000000)" }}
+        >
+          <h1>Add wishlist movies first...</h1>
+        </div>
       </>
     );
   }
@@ -66,35 +68,40 @@ export default function WishList(props) {
 
   return (
     <>
-    <div className=" my-lg-0 my-5 p-lg-0 p-4">f</div>
-    <div
-      style={{ minHeight: "100vh", background: "#2a2a2f" }}
-      className="p-3  p-lg-0 my-lg-5 my-5 mx-lg-0 "
-    >
-      <div className="row">
-        {wishlistdata.map((movie) => (
-          <div
-            key={movie.id}
-            className="col-lg-2 col-md-4 col-sm-6 col-5 ps-lg-0   mx-lg-3 p-3 p-lg-3 mx-2 my-lg-5 my-3 mx-lg-2 text-center"
-            style={{
-              background: "#242429",
-              borderRadius: "20px",
-              padding: "10px",
-            }}
-          >
-            <img
-              onClick={() => handleWishListImgClick(movie)}
-              className="img-fluid mb-2 p-lg-2  p-2  m-0 m-lg-2 "
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-            alt={movie.title || movie.name}
-
-            />
-            <div className="title text-white">{movie.title||movie.name}</div>
-            <div className="rating text-white">{movie.release_date}</div>
-          </div>
-        ))}
+      <div className=" my-lg-0 my-5 p-lg-0 p-4">f</div>
+      <div
+        style={{
+          minHeight: "100vh",
+          background: "#2a2a2f",
+          background: "linear-gradient(to right, #2C3E50, #000000)",
+        }}
+        className="p-3  p-lg-0 my-lg-5 my-5 mx-lg-0 "
+      >
+        <div className="row">
+          {wishlistdata.map((movie) => (
+            <div
+              key={movie.id}
+              className="col-lg-2 col-md-4 col-sm-6 col-5 ps-lg-0   mx-lg-3 p-3 p-lg-3 mx-2 my-lg-5 my-3 mx-lg-2 text-center"
+              style={{
+                borderRadius: "20px",
+                padding: "10px",
+                background: "linear-gradient(to right, #2C3E50, #000000)",
+              }}
+            >
+              <img
+                onClick={() => handleWishListImgClick(movie)}
+                className="img-fluid mb-2 p-lg-2  p-2  m-0 m-lg-2 "
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                alt={movie.title || movie.name}
+              />
+              <div className="title text-white">
+                {movie.title || movie.name}
+              </div>
+              <div className="rating text-white">{movie.release_date}</div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 }
